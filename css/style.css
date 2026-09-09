@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+:root{--paper:#F5F1EB;--ink:#2B2117;--gold:#C9A86A;--forest:#3A4A3A;--line:rgba(43,33,23,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui}
+.serif{font-family:"Playfair Display",serif}.sans{font-family:Inter,sans-serif}
+.reveal{opacity:0;transform:translateY(18px);transition:.8s cubic-bezier(.22,1,.36,1)}.reveal.is-visible{opacity:1;transform:none}
+.gold-frame{box-shadow:0 0 0 1px var(--gold),0 0 0 6px rgba(201,168,106,.14),0 20px 80px -20px rgba(43,33,23,.28)}
+.btn{border-radius:999px;padding:.7rem 1.2rem;font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px}
+img{max-width:100%}

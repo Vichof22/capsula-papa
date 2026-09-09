@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Homenaje Papá - Cápsula del Tiempo</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F1EB] text-[#2B2117] selection:bg-[#C9A86A]/30">
+<header class="sticky top-0 z-30 backdrop-blur-xl bg-[#F5F1EB]/80 border-b border-[#2B2117]/[0.06]">
+  <div class="mx-auto max-w-[1180px] px-6 md:px-10 h-[58px] flex items-center justify-between">
+    <div class="flex items-center gap-3"><div class="h-6 w-6 bg-[#2B2117] text-[#F5F1EB] grid place-items-center rounded serif font-bold text-[10px]">P</div><span class="sans text-[11px] tracking-[0.18em] uppercase opacity-60">Cápsula del tiempo — Edición Padre</span></div>
+  </div>
+</header>
+
+<section class="mx-auto max-w-[1180px] px-6 md:px-10 pt-10 md:pt-16 pb-10">
+  <div class="grid md:grid-cols-[1.15fr_0.85fr] gap-10 md:gap-16 items-start">
+    <div class="reveal">
+      <div class="aspect-[4/5] overflow-hidden rounded-[28px] bg-white gold-frame relative">
+        <img id="retrato" src="" class="h-full w-full object-cover">
+      </div>
+    </div>
+    <div class="reveal md:pt-6">
+      <span class="inline-flex items-center gap-2 border border-[#C9A86A]/40 rounded-full px-3 py-1.5 bg-[#C9A86A]/10 sans text-[10px] tracking-[0.18em] uppercase">Homenaje íntimo</span>
+      <h1 id="hero-title" class="serif text-[56px] md:text-[84px] leading-[0.9] tracking-[-0.03em] mt-6"></h1>
+      <p id="hero-sub" class="serif text-[20px] leading-[1.35] mt-6 italic text-[#3A4A3A]"></p>
+      <div id="tags" class="mt-8 flex flex-wrap gap-2"></div>
+      <div class="mt-10 rounded-[16px] bg-white border p-4 flex items-center justify-between">
+        <div><p class="sans text-[10px] uppercase tracking-[0.15em] opacity-60">Fecha cumpleaños</p><p id="fecha-cumple" class="serif text-[16px]"></p></div>
+      </div>
+      <a href="#carta" class="btn mt-8 inline-flex w-full h-[56px] items-center justify-center gap-3">Abrir cápsula</a>
+    </div>
+  </div>
+</section>
+
+<section id="carta" class="mx-auto max-w-[1180px] px-6 md:px-10 py-12 md:py-20">
+  <div class="reveal grid md:grid-cols-[0.9fr_1.1fr] gap-8 md:gap-14">
+    <div><p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">01 — Carta personal</p><h2 id="carta-titulo" class="serif text-[36px] md:text-[46px] leading-[1.05] mt-3"></h2></div>
+    <div class="rounded-[22px] bg-white border p-6 md:p-8 shadow-[0_20px_60px_-30px_rgba(43,33,23,.25)]"><p id="carta-texto" class="serif text-[17px] leading-[1.75] whitespace-pre-line"></p></div>
+  </div>
+</section>
+
+<section class="bg-[#2B2117] text-[#F5F1EB] rounded-t-[36px]">
+  <div class="mx-auto max-w-[1180px] px-6 md:px-10 py-14 md:py-20">
+    <div class="reveal"><p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">02 — Línea del tiempo</p><h2 class="serif text-[34px] md:text-[48px] leading-[1.05] mt-3">No son años.<br>Son capítulos.</h2></div>
+    <div class="relative mt-12"><div class="absolute left-3 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-[#C9A86A]/40 via-white/10 to-transparent"></div><div id="timeline-list" class="space-y-16 mt-10"></div></div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-[1180px] px-6 md:px-10 py-14 md:py-20">
+  <div class="reveal flex justify-between items-end gap-6"><div><p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">03 — Álbum familiar</p><h2 class="serif text-[34px] md:text-[48px] leading-[0.95] mt-3">Fotos que<br>hablan solas</h2></div></div>
+  <div id="album-grid" class="reveal mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+</section>
+
+<section id="videoteca" class="mx-auto max-w-[1180px] px-6 md:px-10 py-14 md:py-20 bg-white border-y">
+  <p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">04 — Videoteca</p><h2 class="serif text-[34px] md:text-[44px] mt-3">Lo que se mueve, se queda</h2>
+  <div id="videoteca-grid" class="mt-10 grid md:grid-cols-2 gap-6"></div>
+</section>
+
+<!-- 05 SPOTIFY PREMIUM - CORREGIDO -->
+<section id="musica-spotify" class="bg-[#EDE7DD] border-y py-14 md:py-20">
+  <div class="mx-auto max-w-[1180px] px-6 md:px-10">
+    <p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">05 — Sonidos de casa</p>
+    <h2 class="serif text-[34px] md:text-[46px] leading-[0.95] mt-3">La banda<br>sonora de papá</h2>
+    <p class="sans text-[13px] opacity-60 mt-3">Cargando reproductor premium...</p>
+  </div>
+</section>
+
+<section class="bg-[#EDE7DD] border-y">
+  <div class="mx-auto max-w-[1180px] px-6 md:px-10 py-14 md:py-20"><p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">06 — Pared de palabras</p><h2 class="serif text-[34px] md:text-[48px] leading-[0.95] mt-3">Ocho palabras.<br>Ocho historias.</h2><div id="palabras-grid" class="reveal mt-10 grid md:grid-cols-2 gap-5"></div></div>
+</section>
+
+<section class="mx-auto max-w-[1180px] px-6 md:px-10 py-16 md:py-24">
+  <div class="rounded-[28px] bg-white border shadow-[0_30px_80px_-30px_rgba(43,33,23,.25)] p-8 md:p-14">
+    <p class="sans text-[11px] tracking-[0.2em] uppercase opacity-50">07 — Cierre</p>
+    <div class="mt-6 max-w-[700px]">
+      <h2 id="cierre-titulo" class="serif text-[36px] md:text-[52px] leading-[0.9]"></h2>
+      <div class="mt-8">
+        <p id="cierre-texto-display" class="serif text-[18px] leading-[1.8] whitespace-pre-line"></p>
+      </div>
+      <div class="mt-12 border-t border-[#2B2117]/10 pt-8">
+        <p class="sans text-[10px] tracking-[0.15em] uppercase opacity-50">Firma</p>
+        <p id="firma-display" class="serif text-[32px] mt-2"></p>
+      </div>
+    </div>
+  </div>
+  <p class="sans text-[11px] opacity-40 text-center mt-10">Cápsula para Papá</p>
+</section>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
