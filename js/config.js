@@ -53,6 +53,7 @@ Te quiero muchísimo, papá. Qué suerte tuve de encontrarte.`
     { title: "Como Yo Te Amo", artist: "Raphael", src: "assets/music/como-yo-te-amo.mp3", cover: "assets/img/foto_IA_2.jpg" },
     { title: "Estar Enamorado", artist: "Raphael", src: "assets/music/estar-enamorado.mp3", cover: "assets/img/foto_IA_2.jpg" },
     { title: "Que Nadie Sepa Mi Sufrir", artist: "Julio Jaramillo", src: "assets/music/que-nadie-sepa.mp3", cover: "assets/img/d1.jpg" }
+    { title: "Que sabe nadie", artist: "Raphael", src: "assets/music/que-sabe-nadie.mp3", cover: "assets/img/a1.jpg" },
   ],
   palabras: [
     { key: "Admiración", prompt: "¿Qué gesto suyo te hizo admirarlo en silencio?", respuesta: "Que, aunque se cansa, se preocupa y siente, se pone una coraza y sigue adelante para sostener a quienes quiere." },
